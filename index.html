@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IE22+</title>
+    <title>IE22+ - Vraťte se do éry Internet Exploreru</title>
     <style>
         /* Reset stylů */
         * {
@@ -14,91 +14,131 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f3f6fb;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
 
-        /* Hlavní nadpis a barvy */
-        header {
+        /* Hlavní kontejner */
+        .container {
+            max-width: 800px;
             text-align: center;
-            padding: 2rem;
-            background-color: #1a73e8; /* Modrá */
+        }
+
+        /* Header styl */
+        header {
+            background-color: #1a73e8;
             color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             font-size: 2.5rem;
+            font-weight: bold;
         }
 
         header p {
             font-size: 1.2rem;
+            margin-top: 10px;
         }
 
-        #downloadButton {
-            padding: 0.8rem 1.5rem;
-            margin-top: 1rem;
-            background-color: #fbbc05; /* Žlutá */
+        /* Stáhnout tlačítko */
+        .download-button {
+            background-color: #fbbc05;
             color: #1a73e8;
+            padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 1rem;
+            display: inline-block;
         }
 
-        #downloadButton:hover {
+        .download-button:hover {
             background-color: #ffcd38;
+            transform: scale(1.05);
         }
 
-        /* Sekce s funkcemi */
-        #features, #installation {
-            text-align: center;
+        /* Sekce */
+        section {
+            background-color: white;
             padding: 2rem;
-            margin: 1rem 2rem;
-            background-color: #ffffff;
+            margin-top: 20px;
             border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        #features h2, #installation h2 {
+        h2 {
             color: #1a73e8;
-            margin-bottom: 1rem;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         ul {
-            list-style-type: none;
+            list-style: none;
+            padding-left: 0;
         }
 
         ul li {
-            font-size: 1.1rem;
-            margin: 0.5rem 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
         }
 
         /* Footer */
         footer {
-            text-align: center;
+            margin-top: 20px;
             padding: 1rem;
-            background-color: #1a73e8;
-            color: white;
+            text-align: center;
+            color: #666;
             font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>IE22+</h1>
-        <p>Moderní řešení pro prohlížení internetu</p>
-        <button id="downloadButton" onclick="alert('Stahování IE22+ začne brzy!');">Stáhnout IE22+</button>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>IE22+</h1>
+            <p>Vraťte se do éry Internet Exploreru s moderním vzhledem a funkcemi</p>
+            <a href="#" class="download-button" onclick="alert('Stahování IE22+ začne brzy!')">Stáhnout IE22+</a>
+        </header>
 
-    <section id="features">
-        <h2>Klíčové vlastnosti</h2>
-        <ul>
-            <li>Rychlé prohlížení</li>
-            <li>Moderní design</li>
-            <li>Vysoká bezpečnost</li>
-        </ul>
-    </section>
+        <!-- Funkce -->
+        <section>
+            <h2>Klíčové vlastnosti</h2>
+            <ul>
+                <li>Prohlížení s nostalgií IE</li>
+                <li>Moderní a bezpečný design</li>
+                <li>Podpora starých webových stránek</li>
+                <li>Snadná instalace a použití</li>
+            </ul>
+        </section>
+
+        <!-- Instalace -->
+        <section>
+            <h2>Jak nainstalovat</h2>
+            <p>Postupujte podle našeho <a href="#">video návodu</a> pro rychlou instalaci.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 IE22+ - Všechna práva vyhrazena</p>
+        </footer>
+    </div>
+</body>
+</html>
 
     <section id="installation">
         <h2>Jak nainstalovat</h2>
